@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Willfulchip</title>
+
+      <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css" />
+      <link rel="stylesheet" href="./src/css/style.css" />
+
+      <script type="importmap">
+         {
+            "imports": {
+               "easymde": "https://esm.sh/easymde"
+            }
+         }
+      </script>
+      
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav class="navigation">
+               <a href="#" class="back-to-top">WILLFULCHIP</a>
+               <div class="nav-links">
+                  <a href="#aboutMe">About Me</a>
+                  <a href="#notes">Notes</a>
+                  <a href="#articles">Articles</a>
+               </div>
+            </nav>
+         </header>
+
+         <main>
+            <section id="aboutMe">
+               <div class="profile">
+                  <img src="./asset/img/avatar3.jpg" alt="avatar" class="avatar" />
+
+                  <p class="nickname">Willfulchip</p>
+               </div>
+
+               <div class="gallary-container"></div>
+            </section>
+
+            <section class="notes-container" id="notes">
+               <div class="notes-header">
+                  <h2>NOTES</h2>
+                  <!-- 日期筛选 -->
+                  <button class="btn writing-btn" id="note-btn">Write Now</button>
+                  <button class="btn delete-btn">Delete</button>
+               </div>
+
+               <!-- 分页展示，一页展示六张 -->
+               <div class="notes-display">
+                  <!-- <article class="selected" data-type="note" data-id="1">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="note" data-id="2">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="note" data-id="3">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="note" data-id="4">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="note" data-id="5">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="note" data-id="6">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article> -->
+               </div>
+            </section>
+
+            <section class="articles-container" id="articles">
+               <div class="articles-header">
+                  <h2>ARTICLES</h2>
+                  <!-- 日期筛选 -->
+                  <div class="search-area">
+                     <input
+                        type="text"
+                        class="search-bar"
+                        placeholder="Enter the title or content"
+                     />
+                     <button class="btn search-btn">Search</button>
+                  </div>
+                  <button class="btn writing-btn" id="article-btn">Write Now</button>
+                  <button class="btn delete-btn">Delete</button>
+               </div>
+
+               <!-- 分页展示，一页展示六张 -->
+               <div class="articles-display">
+                  <!-- <article data-type="article" data-id="1">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="article" data-id="2">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="article" data-id="3">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="article" data-id="4">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="article" data-id="5">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article>
+                  <article data-type="article" data-id="6">
+                     <h3>2025.08.08</h3>
+                     <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                  </article> -->
+               </div>
+            </section>
+         </main>
+      </div>
+
+      <footer>
+         <p>&copy; Willfulchip</p>
+      </footer>
+
+      <div class="writing-container hidden">
+         <form>
+            <div class="writing-header">
+               <label id="writing-label" for="content-input"
+                  >Write down what u watch in those days and ur feelings</label
+               >
+
+               <button type="button" class="close-btn">❌</button>
+            </div>
+
+            <textarea id="content-input" class="content-input" placeholder="..."></textarea>
+
+            <button type="submit" class="btn finish-btn">Finished</button>
+         </form>
+      </div>
+      <!--  <label for="content-input"
+         >Write down the bug and the solutions or ur thoughts</label
+      > -->
+
+      <script type="module" src="./src/script.js"></script>
+   </body>
+</html>
