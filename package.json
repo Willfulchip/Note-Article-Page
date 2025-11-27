@@ -1,21 +1,21 @@
 {
-  "name": "willfulchip",
-  "version": "1.0.0",
-  "description": "Personal Blog",
-  "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite",
-    "preview": "vite"
-  },
-  "author": "Willfulchip",
-  "license": "ISC",
-  "dependencies": {
-    "easymde": "^2.20.0",
-    "marked": "^16.3.0",
-    "prettier": "^3.6.2"
-  },
-  "devDependencies": {
-    "vite": "7.1.5"
-  }
+   "name": "willfulchip",
+   "version": "1.0.0",
+   "description": "Personal Blog",
+   "scripts": {
+      "dev": "vite",
+      "start": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+   },
+   "author": "Willfulchip",
+   "license": "ISC",
+   "dependencies": {
+      "easymde": "^2.20.0",
+      "marked": "^16.3.0",
+      "prettier": "^3.6.2"
+   },
+   "devDependencies": {
+      "vite": "7.1.5"
+   }
 }
